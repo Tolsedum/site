@@ -1,13 +1,14 @@
 @extends('main')
 
 @section("title")
-About
+Index
 @endsection
 
 @section("description")
-About page
+Main page
 @endsection
 
 @section('main_content')
-<h1>Template about</h1>
+    <h1>Template index</h1><br>
+   
 @endsection

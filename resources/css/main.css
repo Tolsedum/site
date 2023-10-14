@@ -1,0 +1,9 @@
+:root,
+[data-bs-theme=light]{
+    --bs-border-color-50: rgba(255, 255, 255, 0.5);
+}
+
+
+.border-bottom-white-50{
+    border-bottom: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color-50) !important;
+}

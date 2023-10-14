@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\InfoController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,10 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [InfoController::class, "index"])->name("index");
 
-Route::get('/about', function () {
-    return view('about');
+Route::get('/about', "App\Http\Controllers\InfoController@about");
+
+Route::get('/user/{id}/{name}', function ($id, $name) {
+    return "ID: {$id} NAME: {$name}";
 });

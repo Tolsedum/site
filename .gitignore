@@ -17,3 +17,13 @@ yarn-error.log
 /.fleet
 /.idea
 /.vscode
+.fleet
+.idea
+.vscode
+.phpunit.cache
+node_modules
+public/build
+public/hot
+public/storage
+storage/*.key
+vendor
