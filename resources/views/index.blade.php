@@ -1,14 +1,14 @@
 @extends('main')
 
 @section("title")
-Index
+{{__("Index")}}
 @endsection
 
 @section("description")
-Main page
+{{__("Main page")}}
 @endsection
 
 @section('main_content')
-    <h1>Template index</h1><br>
-   
+    <h1>{{__("Template index")}}</h1><br>
+    {{ app()->getLocale() }}
 @endsection

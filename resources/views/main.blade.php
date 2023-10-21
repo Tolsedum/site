@@ -39,8 +39,10 @@
         </footer>
 
     <!-- </div> -->
-
         <script src="resources/js/bootstrap_source/bootstrap.bundle.min.js"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <!-- <script type="module" src="resources/js/bootstrap.js"></script> -->
+        <script type='module' src="resources/js/app.js"></script>
         @if(!empty($script_post_list))
             @foreach($script_post_list as $script_href)
                 <script src="{{$script_href}}"></script>

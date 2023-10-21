@@ -12,10 +12,16 @@ use App\Http\Controllers\InfoController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::post('/set_language', "App\Http\Controllers\InfoController@set_language");
 
-Route::get('/', [InfoController::class, "index"])->name("index");
+Route::match(['get', 'post'], '/', "App\Http\Controllers\InfoController@index");
+// Route::get('/', [InfoController::class, "index"])->name("index");
+// Route::match(['get', 'post'], '/', [InfoController::class, "index"])->name("index");
 
-Route::get('/about', "App\Http\Controllers\InfoController@about");
+Route::match(['get', 'post'], '/about', "App\Http\Controllers\InfoController@about");
+// Route::match(['get', 'post'], '/about', [InfoController::class, "about"])->name("about");
+// Route::get('/about', "App\Http\Controllers\InfoController@about");
+
 
 Route::get('/user/{id}/{name}', function ($id, $name) {
     return "ID: {$id} NAME: {$name}";
