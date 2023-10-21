@@ -22,4 +22,5 @@
     </ul>
 
     <p class="text-center text-white-50">{{__("Copyright © Kuzmin Alexey Petrovich, 2023")}}</p>
+    <p class="text-center text-white-50">tolsedum@yandex.ru</p>
     
