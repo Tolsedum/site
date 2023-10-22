@@ -1,11 +1,11 @@
 @extends('main')
 
 @section("title")
-About
+{{__("Resume")}}
 @endsection
 
 @section("description")
-About page
+{{ __("") }}
 @endsection
 
 @section('main_content')

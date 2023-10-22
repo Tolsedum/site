@@ -20,10 +20,11 @@
                 @if($is_dropdown)
                     @foreach($element_bar["dropdown"] as $drop_url => $drop_list)
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item @if($drop_list["active"]) active @endif" href="{{ $drop_url }}">{{$drop_list["inner"]}}</a></li>
+                            <li><a class="dropdown-item @if($drop_list["active"]) active @endif" 
+                            href="{{ $drop_url }}">{{$drop_list["inner"]}}</a></li>
                         </ul>
                     @endforeach    
                 @endif
         </li>
     @endforeach
-</ul>`
+</ul>

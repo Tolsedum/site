@@ -35,10 +35,10 @@ class ViewComponents
                     "active" => false,
                     "inner" => __("My projects"),
                     "dropdown" => [
-                        "/sait" => [
+                        "/my_project/php" => [
                             "active" => false,
-                            "inner" => __("Site on Laravel framework"),
-                        ]
+                            "inner" => __("php"),
+                        ],
                     ],
                 ],
             ],

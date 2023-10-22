@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\InfoController;
+use App\Http\Controllers\MyPHPProjectsController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,15 +15,18 @@ use App\Http\Controllers\InfoController;
 */
 Route::post('/set_language', "App\Http\Controllers\InfoController@set_language");
 
-Route::match(['get', 'post'], '/', "App\Http\Controllers\InfoController@index");
+Route::get('/', "App\Http\Controllers\InfoController@index");
+// Route::match(['get', 'post'], '/', "App\Http\Controllers\InfoController@index");
 // Route::get('/', [InfoController::class, "index"])->name("index");
 // Route::match(['get', 'post'], '/', [InfoController::class, "index"])->name("index");
 
-Route::match(['get', 'post'], '/about', "App\Http\Controllers\InfoController@about");
+Route::get('/about', "App\Http\Controllers\InfoController@about");
+// Route::match(['get', 'post'], '/about', "App\Http\Controllers\InfoController@about");
 // Route::match(['get', 'post'], '/about', [InfoController::class, "about"])->name("about");
-// Route::get('/about', "App\Http\Controllers\InfoController@about");
 
+Route::get('/my_project/php', "App\Http\Controllers\MyPHPProjectsController@listPhpProgects");
+Route::get('/my_project/php/laravel_site', "App\Http\Controllers\MyPHPProjectsController@laravelSite");
 
-Route::get('/user/{id}/{name}', function ($id, $name) {
-    return "ID: {$id} NAME: {$name}";
-});
+// Route::get('/user/{id}/{name}', function ($id, $name) {
+//     return "ID: {$id} NAME: {$name}";
+// });

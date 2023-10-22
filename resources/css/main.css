@@ -7,3 +7,7 @@
 .border-bottom-white-50{
     border-bottom: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color-50) !important;
 }
+
+.col-for-image{
+    display: inline-block;
+}

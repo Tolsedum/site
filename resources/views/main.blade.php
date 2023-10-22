@@ -8,8 +8,6 @@
         <meta name="description" content="@yield('description')">
         <meta name="author" content="Tolsedum">
 
-        <link href="resources/css/bootstrap_source/bootstrap.min.css" rel="stylesheet">
-
         <!-- Custom styles for this template -->
         @if(!empty($style_list))
             @foreach($style_list as $style_href)
@@ -37,9 +35,9 @@
             @include("components.footer")
         </footer>
 
-        <script src="resources/js/bootstrap_source/bootstrap.bundle.min.js"></script>
-        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-        <script type='module' src="resources/js/app.js"></script>
+        
+        <!-- <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script type='module' src="resources/js/app.js"></script> -->
         @if(!empty($script_post_list))
             @foreach($script_post_list as $script_href)
                 <script src="{{$script_href}}"></script>
