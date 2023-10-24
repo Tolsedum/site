@@ -13,8 +13,8 @@
 <div class="container">
   <div class="">
     <div class="col-for-image">
-        <a href="/my_project/php/laravel_site">
-            <img src="{{ url("public/php_progects/laravel.png") }}" height="250px" width="350px" class="rounded float-start" alt="...">    
+        <a href="/my_project/web/laravel_site">
+            <img src="{{ url("public/web/laravel.png") }}" height="250px" width="350px" class="rounded float-start" alt="...">    
         </a>
     </div>
 

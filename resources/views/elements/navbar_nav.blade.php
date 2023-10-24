@@ -1,5 +1,5 @@
 <ul class="navbar-nav">
-    @foreach($navbar["ul"] as $url => $element_bar)
+    @foreach($navbar as $url => $element_bar)
         
         @if(isset($element_bar["dropdown"]))
             @php $is_dropdown = true; @endphp

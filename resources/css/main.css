@@ -11,3 +11,7 @@
 .col-for-image{
     display: inline-block;
 }
+
+.breadcrumb-item.active {
+    color: rgb(133 140 147 / 75%) !important;
+}

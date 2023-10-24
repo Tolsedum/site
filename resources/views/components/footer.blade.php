@@ -1,6 +1,6 @@
 
     <ul class="nav justify-content-center border-bottom-white-50 pb-3 mb-3">
-      @foreach($navbar["ul"] as $url => $element_bar)
+      @foreach($navbar as $url => $element_bar)
         @if(isset($element_bar["dropdown"]))
             @php $is_dropdown = true; @endphp
         @else

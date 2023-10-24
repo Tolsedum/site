@@ -24,8 +24,9 @@ Route::get('/about', "App\Http\Controllers\InfoController@about");
 // Route::match(['get', 'post'], '/about', "App\Http\Controllers\InfoController@about");
 // Route::match(['get', 'post'], '/about', [InfoController::class, "about"])->name("about");
 
-Route::get('/my_project/php', "App\Http\Controllers\MyPHPProjectsController@listPhpProgects");
-Route::get('/my_project/php/laravel_site', "App\Http\Controllers\MyPHPProjectsController@laravelSite");
+Route::get('/my_project', "App\Http\Controllers\MyPHPProjectsController@myProject");
+Route::get('/my_project/web', "App\Http\Controllers\MyPHPProjectsController@listWebProgects");
+Route::get('/my_project/web/laravel_site', "App\Http\Controllers\MyPHPProjectsController@laravelSite");
 
 // Route::get('/user/{id}/{name}', function ($id, $name) {
 //     return "ID: {$id} NAME: {$name}";

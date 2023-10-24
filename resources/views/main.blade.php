@@ -16,7 +16,7 @@
         @endif
         @if(!empty($script_pre_list))
             @foreach($script_pre_list as $script_href)
-                <script src="{{$script_href}}"></script>
+                @include("components.create_script", $script_href)
             @endforeach
         @endif
     </head>
@@ -28,6 +28,7 @@
         </header>
 
         <main class="px-3 w-100 p-3" style="flex: 1 0 auto;">
+            @if(!empty($breadcrumb) && count($breadcrumb) > 1) @include('components.breadcrumb', $breadcrumb) @endif
             @yield('main_content')
         </main>
 
@@ -40,7 +41,7 @@
         <script type='module' src="resources/js/app.js"></script> -->
         @if(!empty($script_post_list))
             @foreach($script_post_list as $script_href)
-                <script src="{{$script_href}}"></script>
+                @include("components.create_script", $script_href)
             @endforeach
         @endif
     </body>

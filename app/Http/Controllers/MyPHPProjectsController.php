@@ -6,11 +6,20 @@ use Illuminate\Http\Request;
 
 class MyPHPProjectsController extends ControllerTemplate{
     
-    public function listPhpProgects(Request $request){
+    public function myProject(Request $request){
         $var = [];
         return $this->defaultInit(
             $request, 
-            "my_progects/php_progects/php_list_progects", 
+            "my_progects/my_project", 
+            $var
+        );
+    }
+
+    public function listWebProgects(Request $request){
+        $var = [];
+        return $this->defaultInit(
+            $request, 
+            "my_progects/web_progects/web_list_progects", 
             $var
         );
     }
@@ -19,7 +28,7 @@ class MyPHPProjectsController extends ControllerTemplate{
         $var = [];
         return $this->defaultInit(
             $request, 
-            "my_progects/php_progects/laravel_site", 
+            "my_progects/web_progects/laravel_site", 
             $var
         );
     }

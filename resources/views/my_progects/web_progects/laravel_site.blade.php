@@ -10,6 +10,6 @@
 
 @section('main_content')
 
-<h1>Сайт на ларавел</h1>
+<h1>{{__("Site on Laravel framework")}}</h1>
   
 @endsection

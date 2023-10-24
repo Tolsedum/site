@@ -12,19 +12,27 @@ class ControllerTemplate extends Controller{
     public function __construct(Request $request){
         $this->middleware(['default']);
     }
+    
 
-    protected function initVars(){
+    protected function initVars(Request $request){
+        $menu_elements = ViewComponents::getElements();
+        // dd($menu_elements["breadcrumb"]);
+        // $breadcrumb = $this->getBreadcrumb($request);
         return [
             "list_languges" => UserLanguage::getLanguages(),
             "style_list" => [
                 url("resources/css/main.css"),
                 url("resources/css/bootstrap_source/bootstrap.min.css")
             ],
-            "script_post_list" => [
-                url("resources/js/bootstrap_source/bootstrap.bundle.min.js"),
-                // url("resources/js/app.js")
+            "script_pre_list" => [
+                ["src" => "https://unpkg.com/axios/dist/axios.min.js"],
             ],
-            "navbar" => ViewComponents::getElements()
+            "script_post_list" => [
+                ["src" => url("resources/js/bootstrap_source/bootstrap.bundle.min.js")],
+                ["src" => url("resources/js/app.js"), "type" => "module"],
+            ],
+            "navbar" => $menu_elements["ul"],
+            "breadcrumb" => $menu_elements["breadcrumb"]
         ];
     }
 
@@ -49,7 +57,7 @@ class ControllerTemplate extends Controller{
         array $var
     ){
         if ($request->isMethod('get')) {
-            $this->vars = array_merge($var, $this->initVars());
+            $this->vars = array_merge($var, $this->initVars($request));
         }else if ($request->isMethod('post')) {
             return redirect($this->getReturnUrl($request));
         }
