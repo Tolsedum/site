@@ -14,6 +14,7 @@ return new class extends Migration
     {
         Schema::create('articles', function (Blueprint $table) {
             $table->id("articles_id");
+            $table->string("article_name", 250); // Name article
             $table->dateTime('date_create'); // Date of creation
             $table->string("path", 250); // Path to the folder with translation files
             $table->string("file_name", 250); // File name, no extension

@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Http\Request;
 use App\Http\Middleware\UserLanguage;
 use App\Http\Middleware\ViewComponents;
-use Illuminate\Http\Request;
 
 class ControllerTemplate extends Controller{
     protected $vars = [];
@@ -12,12 +12,9 @@ class ControllerTemplate extends Controller{
     public function __construct(Request $request){
         $this->middleware(['default']);
     }
-    
 
     protected function initVars(Request $request){
         $menu_elements = ViewComponents::getElements();
-        // dd($menu_elements["breadcrumb"]);
-        // $breadcrumb = $this->getBreadcrumb($request);
         return [
             "list_languges" => UserLanguage::getLanguages(),
             "style_list" => [

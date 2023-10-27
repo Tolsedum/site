@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Enum\ArticleState;
+use App\Models\Article;
 use Illuminate\Http\Request;
 
 class MyPHPProjectsController extends ControllerTemplate{
@@ -23,9 +25,12 @@ class MyPHPProjectsController extends ControllerTemplate{
             $var
         );
     }
-
+    
     public function laravelSite(Request $request){
-        $var = [];
+        // Article::importData();
+        $article = Article::where("article_name", "laravel_site")->first();
+        $var = $article->getArticleContent();
+        
         return $this->defaultInit(
             $request, 
             "my_progects/web_progects/laravel_site", 

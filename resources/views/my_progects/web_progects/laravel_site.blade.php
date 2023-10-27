@@ -11,5 +11,7 @@
 @section('main_content')
 
 <h1>{{__("Site on Laravel framework")}}</h1>
-  
+<p>{{ $p1 }}</p>
+
+<p>{{ $date_create }}</p>
 @endsection

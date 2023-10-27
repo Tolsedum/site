@@ -1,0 +1,12 @@
+{
+    "laravel_site":{
+        "article_name":"laravel_site",
+        "path":"private/articles/my_progects/web_progects/laravel_site",
+        "file_name":"laravel_site"
+    },
+    "about":{
+        "article_name":"about",
+        "path":"private/articles/about",
+        "file_name":"about"
+    }
+}
