@@ -43,7 +43,6 @@ class Article extends Model
                 . "/" . $this->file_name 
                 . "." . app()->getLocale()
                 . ".json";
-            
             $var = json_decode(file_get_contents($file_name), true);
             $var["date_create"] = $this->date_create;
         }

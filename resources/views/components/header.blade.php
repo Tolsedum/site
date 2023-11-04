@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg bg-dark border-bottom border-body " 
+<nav class="fixed-top navbar navbar-expand-lg bg-dark border-bottom border-body " 
   data-bs-theme="dark">
   <div class="container-fluid">
   

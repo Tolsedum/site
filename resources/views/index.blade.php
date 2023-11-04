@@ -9,6 +9,9 @@
 @endsection
 
 @section('main_content')
-    <h1>{{__("Template index")}}</h1><br>
-    {{ app()->getLocale() }}
+    
+<h1>Main</h1>
+    
 @endsection
+
+

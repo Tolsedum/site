@@ -23,7 +23,7 @@
 
     <body class="d-flex h-100 text-center text-bg-dark vstack">
 
-        <header class="mb-auto">
+        <header class="mb-5">
             @include("components.header")
         </header>
 

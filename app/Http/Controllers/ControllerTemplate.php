@@ -54,7 +54,14 @@ class ControllerTemplate extends Controller{
         array $var
     ){
         if ($request->isMethod('get')) {
-            $this->vars = array_merge($var, $this->initVars($request));
+            $this->vars = $this->initVars($request);
+            foreach ($var as $key => $value) {
+                if(isset($this->vars[$key])){
+                    $this->vars[$key] = array_merge($this->vars[$key], $value);
+                }else{
+                    $this->vars[$key] = $value;
+                }
+            }
         }else if ($request->isMethod('post')) {
             return redirect($this->getReturnUrl($request));
         }

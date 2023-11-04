@@ -23,4 +23,5 @@
 
     <p class="text-center text-white-50">{{__("Copyright © Kuzmin Alexey Petrovich, 2023")}}</p>
     <p class="text-center text-white-50">tolsedum@yandex.ru</p>
+    <p>{{__("Icons and images provided by the site")}}: <a href="https://www.freepik.com/" target="_blank" title="{{__('icon address')}}">Freepik</a></p>
     
