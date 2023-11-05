@@ -1,16 +1,20 @@
 {
-    "p1": "My name is Alexey and I am glad to welcome you to my resource.",
-    "p2": "I am a programmer with great enthusiasm and a desire to master the world of coding.",
-    "p3": "My expertise includes knowledge of C++, PHP, JavaScript, Smarty.  The rapid development of technology in the web industry always keeps me energized, and I am excited to apply my skills and knowledge to create innovative and effective solutions.",
-    "h_1": "During my practice I have realized commercial projects in such directions as",
-    "p4": "In my free time I am engaged in developing my projects and studying new technologies. On this site I decided to share the results of my achievements and work experience in my area of interest. My site is a reflection of my skills and professional growth. Here you can find information about my projects that I have completed during my studies, as well as about me and my goals. I have always been attracted by the opportunity to gain knowledge and skills to create useful and innovative solutions.",
+    "p1": "My name is Alexei and I am happy to welcome you to my resource.",
+    "p2": "I'm a programmer with great enthusiasm and a desire to master the world of coding.",
+    "p2_1": "My expertise includes knowledge of C++, PHP, JavaScript, and related languages.",
+    "p2_2": "The rapid advancement of technology in the web industry always keeps me energized, ",
+    "p2_3": "and I am excited to apply my skills and knowledge to create innovative and effective solutions.",
+    "h_1": "During my work, realized commercial projects in such directions as",
+    "p4": "In my free time I am engaged in developing my projects and studying new technologies. On this site I decided to share the results of my achievements and work experience in my area of interest.",
     "p5": "My website is a reflection of my skills and professional growth. Here you can find information about my projects that I have completed during my studies, as well as about me and my goals.",
     "p6": "I have always been attracted by the opportunity to gain knowledge and skills to create useful and innovative solutions.",
     "p7": "I also plan to blog about programming, electronics, DIY and other interesting topics. It's a place where I will share my thoughts, ideas and useful information.",
-    "p8": "I believe the blog will be an inspiring and informative source that will help you expand your knowledge and find new ideas.",
-    "p9": "If you have any questions, ideas or suggestions, feel free to email me (tolsedum@yandex.ru). Soon, I will organize a subscription to the newsletter to receive notifications about new articles and updates on the site. This will help you stay up to date and not miss important information. I always strive to provide you with the most useful information possible. If there are any topics or issues (within my expertise) that you would like to see on the site, let me know.",
-    "p10": "Thank you for your interest in my project, and I hope that it will become an irreplaceable source of information and inspiration for you. I wish you a pleasant time and successful achievements!",
+    "p8": "I believe the blog will be an inspiring and informative source to help you expand your knowledge and find new ideas.",
+    "p9": "If you have any questions, ideas or suggestions, feel free to email me (tolsedum@yandex.ru). Soon, I will organize a subscription to the newsletter to receive notifications about new articles and updates on the site. This will help you stay up to date and not miss important information. I always strive to provide you with the most useful information.",
+    "p10":"If there are any topics or issues (within my expertise) that you would like to see on the site, let me know.",
+    "p11": "Thank you for your interest in my project. I wish you a pleasant time and successful achievements!",
     "descr_mony": "I would be very grateful for moral and material support.",
     "name_payment": "YooMoney",
     "mony": "410014233800351"
 }
+

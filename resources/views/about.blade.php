@@ -106,12 +106,11 @@
             </div>
         </div>
     </div>
-</div>
 </section>
 
-<section class="container mt-5 about-hidden-block">
+<section class="container mt-5">
     
-    <div class="d-flex flex-row bd-highlight mb-3">
+    <div class="d-flex align-items-center flex-row bd-highlight mb-3">
         <div class="p-2 bd-highlight about-text-block-big">
             <img src="web/about/tool_image2.jpg" width="350px" style="margin: 5px;" />
         </div>
@@ -126,15 +125,23 @@
                     {{ $p7 }}
                     {{ $p8 }}
                 </p>
-                <p>{{ $p9 }}</p>
-                <p>{{ $p10 }} {{ $p11 }}</p>
+                
         </div>
     </div>
    
     
 </section>
 
-
+<section class=" d-flex flex-column align-items-center text-center lite-image-text-section lite-background-image" 
+    style="background-image: url(web/about/fon2.jpg); background-size: cover;">
+    <div class="container-small mb-5 mt-5">
+        <div class="row g-4 py-3 ">
+                <p>{{ $p9 }}</p>
+                <p>{{ $p10 }} {{ $p11 }}</p>
+        </div>
+    </div>
+    
+</section>
 
 
 <section class="container text-center">

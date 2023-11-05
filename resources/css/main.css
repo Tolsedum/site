@@ -60,3 +60,6 @@
 
 
 
+.container-small{
+    max-width: 650px;
+}
