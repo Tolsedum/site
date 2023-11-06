@@ -27,7 +27,7 @@
             @include("components.header")
         </header>
 
-        <main class="px-3 w-100 p-3" style="flex: 1 0 auto;">
+        <main class="w-100" style="flex: 1 0 auto;">
             @if(!empty($breadcrumb) && count($breadcrumb) > 1) @include('components.breadcrumb', $breadcrumb) @endif
             @yield('main_content')
         </main>

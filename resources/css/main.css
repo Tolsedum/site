@@ -38,11 +38,6 @@
     background: radial-gradient(circle farthest-corner at 367px 0px, #F6EFD2, #a16419);
 }
 
-.die-index-page{
-    
-    /* width: 312px; */
-}
-
 .block-by-image{
     text-align:center;
     padding-top:15%;
@@ -62,4 +57,44 @@
 
 .container-small{
     max-width: 650px;
+}
+
+.first-image{
+    height: 75vh !important;
+    text-align: justify; 
+    text-indent: 20px;
+}
+
+.first-image>div{
+    width:100%; 
+    height:100%; 
+}
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+    
+}
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+   
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+    
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+    
+}
+
+@media (max-width: 650) {
+    
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+    
 }

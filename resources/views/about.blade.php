@@ -11,33 +11,21 @@
 @section('main_content')
 
 
-<section class="about-first-image">
+<section class="first-image">
 
-
-    <div class="  mb-3" 
-        style="display: flex; align-items: center;
-  justify-content: center; background:linear-gradient(rgba(28, 28, 29, 0), rgba(28, 28, 29, 0)), url(web/about/main_image1.jpg) center center / cover no-repeat;">
-
-        <!-- <div class="d-flex flex-column block-by-image align-items-center">
-            <div class="p-2 bd-highlight">
-                <h1>{{__("Welcome to my personal website")}}</h1>
-            </div>
-
-            <div class="p-2 bd-highlight"><span>{{ $p1 }}</span></div>
-        </div> -->
-
+    <div class="about-first-background-image  mb-3" 
+        style="display: flex; align-items: center; justify-content: center;">
         
-            <div class="p-2 bd-highlight " style="text-align:center;">
+            <div class="p-2 bd-highlight" style="text-align:center;">
                 <h1>{{__("Welcome to my personal website")}}</h1>
                 <span>{{ $p1 }}</span>
             </div>
-
         
     </div>
 
 </section>
 
-<section class="lite-image-text-section lite-background-image" style="background-image: url(web/about/fon.jpg); background-size: cover;">
+<section class="lite-image-text-section lite-background-image" style="background-image: url(web/about/750/fon.webp); background-size: cover;">
     <div class="flex-column container">
         <div class="row g-4 py-3 ">
             <div class="col d-flex align-items-start justify-content-center">
@@ -51,10 +39,14 @@
         </div>
     </div>
     <div class="flex-column ">
+        
+    <div class="container">
         <h4 style="margin: 25px 0px 25px 0px;">{{ $h_1 }}:</h4>
+    </div>
+        
 
         <div class="row g-4 py-3 row-cols-1 row-cols-lg-3 align-self-end">
-
+            
             <div class="col d-flex align-items-start justify-content-center">
                 <div class="icon-square text-body-emphasis  d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
                     <img src="web/icon/pay_tool.png" width="35px" height="35px" style="margin: 5px;" />
@@ -112,7 +104,7 @@
     
     <div class="d-flex align-items-center flex-row bd-highlight mb-3">
         <div class="p-2 bd-highlight about-text-block-big">
-            <img src="web/about/tool_image2.jpg" width="350px" style="margin: 5px;" />
+            <img src="web/about/750/tool_image2.webp" width="350px" style="margin: 5px;" />
         </div>
         <div class="p-2 bd-highlight">
         <p>
@@ -133,7 +125,7 @@
 </section>
 
 <section class=" d-flex flex-column align-items-center text-center lite-image-text-section lite-background-image" 
-    style="background-image: url(web/about/fon2.jpg); background-size: cover;">
+    style="background-image: url(web/about/750/fon2.webp); background-size: cover;">
     <div class="container-small mb-5 mt-5">
         <div class="row g-4 py-3 ">
                 <p>{{ $p9 }}</p>
@@ -143,9 +135,9 @@
     
 </section>
 
-
+<hr>
 <section class="container text-center">
-    <hr>
+    
     <div class="row align-items-start">
         <div class="col">
             <form>

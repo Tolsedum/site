@@ -1,15 +1,3 @@
-.about-first-image{
-    height: 75vh !important;
-    text-align: justify; 
-    text-indent: 20px;
-}
-
-.about-first-image>div{
-    width:100%; 
-    height:100%; 
-    /* background:linear-gradient(rgba(28, 28, 29, 0), rgba(28, 28, 29, 0)), url(web/main_image1.jpg) center center / cover no-repeat; */
-}
-
 .lite-image-text-section{
     /* height: 90vh !important; */
     position: relative;
@@ -27,10 +15,17 @@
     .lite-image-text-section-image{
         width: 500px;
     }
+    .about-first-background-image{
+        background:linear-gradient(rgba(28, 28, 29, 0), rgba(28, 28, 29, 0)), url("../../public/web/about/1600/main_image1.webp") center center / cover no-repeat;
+    }
 }
 
 /* Portrait tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
+    .about-first-background-image{
+        background:linear-gradient(rgba(28, 28, 29, 0), rgba(28, 28, 29, 0)), url("../../public/web/about/750/main_image1.webp") center center / cover no-repeat;
+    }
+
     .lite-image-text-section-image{
         /* width: 800px; */
     }
@@ -44,6 +39,10 @@
 
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
+    .about-first-background-image{
+        background:linear-gradient(rgba(28, 28, 29, 0), rgba(28, 28, 29, 0)), url("../../public/web/about/750/main_image1.webp") center center / cover no-repeat;
+    }
+    
     .lite-image-text-section-image{
         width: 600px;
     }
@@ -57,6 +56,9 @@
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
+    .about-first-background-image{
+        background:linear-gradient(rgba(28, 28, 29, 0), rgba(28, 28, 29, 0)), url("../../public/web/about/750/main_image1.webp") center center / cover no-repeat;
+    }
     .lite-image-text-section-image{
         /* width: 800px; */
     }
@@ -69,6 +71,9 @@
 }
 
 @media (max-width: 650) {
+    .about-first-background-image{
+        background:linear-gradient(rgba(28, 28, 29, 0), rgba(28, 28, 29, 0)), url("../../public/web/about/250/main_image1.webp") center center / cover no-repeat;
+    }
     .lite-image-text-section-image{
         /* width: 800px; */
     }
@@ -82,6 +87,9 @@
 
 /* Landscape phones and smaller */
 @media (max-width: 480px) {
+    .about-first-background-image{
+        background:linear-gradient(rgba(28, 28, 29, 0), rgba(28, 28, 29, 0)), url("../../public/web/about/250/main_image1.webp") center center / cover no-repeat;
+    }
     .lite-image-text-section-image{
         /* width: 800px; */
     }
