@@ -1,46 +1,75 @@
+.index-first-background-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* Large desktops and laptops */
 @media (min-width: 1200px) {
     
     .index-first-background-image{
-        background:linear-gradient(rgba(28, 28, 29, 0), rgba(28, 28, 29, 0)), url("../../public/web/index/1600/main_image1.webp") center center / cover no-repeat;
+        background:linear-gradient(rgba(28, 28, 29, 0), rgba(28, 28, 29, 0)), url("../../public/web/index/1600/side_view_gardener_holding_little_tree.webp") center center / cover no-repeat;
+    }
+
+    .index-last-background-image{
+        background-image: url("../../public/web/index/1600/potted-tree-wooden-surface.webp");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-size: 50%;
+        
+        /* background:linear-gradient(rgba(28, 28, 29, 0), rgba(28, 28, 29, 0)),  center center / cover no-repeat; */
+    }
+
+    .index-lite-background-image{
+        background-image: url("../../public/web/project_site/1600/side_view_gardener_holding_little_tree.webp"); 
     }
 }
 
 /* Portrait tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
     .index-first-background-image{
-        background:linear-gradient(rgba(28, 28, 29, 0), rgba(28, 28, 29, 0)), url("../../public/web/index/750/main_image1.webp") center center / cover no-repeat;
+        background:linear-gradient(rgba(28, 28, 29, 0), rgba(28, 28, 29, 0)), url("../../public/web/index/750/side_view_gardener_holding_little_tree.webp") center center / cover no-repeat;
     }
-
+    .index-last-background-image{
+        background:linear-gradient(rgba(28, 28, 29, 0), rgba(28, 28, 29, 0)), url("../../public/web/index/750/potted-tree-wooden-surface.webp") center center / cover no-repeat;
+    }
 }
 
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
     .index-first-background-image{
-        background:linear-gradient(rgba(28, 28, 29, 0), rgba(28, 28, 29, 0)), url("../../public/web/index/750/main_image1.webp") center center / cover no-repeat;
+        background:linear-gradient(rgba(28, 28, 29, 0), rgba(28, 28, 29, 0)), url("../../public/web/index/750/side_view_gardener_holding_little_tree.webp") center center / cover no-repeat;
     }
-    
+    .index-last-background-image{
+        background:linear-gradient(rgba(28, 28, 29, 0), rgba(28, 28, 29, 0)), url("../../public/web/index/750/potted-tree-wooden-surface.webp") center center / cover no-repeat;
+    }
 }
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
     .index-first-background-image{
-        background:linear-gradient(rgba(28, 28, 29, 0), rgba(28, 28, 29, 0)), url("../../public/web/index/750/main_image1.webp") center center / cover no-repeat;
+        background:linear-gradient(rgba(28, 28, 29, 0), rgba(28, 28, 29, 0)), url("../../public/web/index/750/side_view_gardener_holding_little_tree.webp") center center / cover no-repeat;
     }
-    
+    .index-last-background-image{
+        background:linear-gradient(rgba(28, 28, 29, 0), rgba(28, 28, 29, 0)), url("../../public/web/index/750/potted-tree-wooden-surface.webp") center center / cover no-repeat;
+    }
 }
 
 @media (max-width: 650) {
     .index-first-background-image{
-        background:linear-gradient(rgba(28, 28, 29, 0), rgba(28, 28, 29, 0)), url("../../public/web/index/250/main_image1.webp") center center / cover no-repeat;
+        background:linear-gradient(rgba(28, 28, 29, 0), rgba(28, 28, 29, 0)), url("../../public/web/index/250/side_view_gardener_holding_little_tree.webp") center center / cover no-repeat;
     }
-    
+    .index-last-background-image{
+        background:linear-gradient(rgba(28, 28, 29, 0), rgba(28, 28, 29, 0)), url("../../public/web/index/250/potted-tree-wooden-surface.webp") center center / cover no-repeat;
+    }
 }
 
 /* Landscape phones and smaller */
 @media (max-width: 480px) {
     .index-first-background-image{
-        background:linear-gradient(rgba(28, 28, 29, 0), rgba(28, 28, 29, 0)), url("../../public/web/index/250/main_image1.webp") center center / cover no-repeat;
+        background:linear-gradient(rgba(28, 28, 29, 0), rgba(28, 28, 29, 0)), url("../../public/web/index/250/side_view_gardener_holding_little_tree.webp") center center / cover no-repeat;
     }
-   
+    .index-last-background-image{
+        background:linear-gradient(rgba(28, 28, 29, 0), rgba(28, 28, 29, 0)), url("../../public/web/index/250/potted-tree-wooden-surface.webp") center center / cover no-repeat;
+    }
 }

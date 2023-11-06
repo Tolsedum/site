@@ -15,6 +15,9 @@ class InfoController extends ControllerTemplate{
         if(!empty($article)){
             $var = $article->getArticleContent();
         }
+        $var["style_list"] = [
+            url("resources/css/index.css")
+        ];
         return $this->defaultInit($request, "index", $var);
     }
 

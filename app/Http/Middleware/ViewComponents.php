@@ -54,22 +54,22 @@ class ViewComponents
                         "active" => false,
                         "inner" => __("Resume"),
                     ],
-                    "/my_project" => [
-                        "active" => false,
-                        "inner" => __("My projects"),
-                        "dropdown" => [
-                            "/my_project/web" => [
-                                "active" => false,
-                                "inner" => __("web"),
-                                "dropdown" => [
-                                    "/my_project/web/laravel_site" => [
-                                        "active" => false,
-                                        "inner" => __("Site on Laravel framework"),
-                                    ],
-                                ],
-                            ],
-                        ],
-                    ],
+                    // "/my_project" => [
+                    //     "active" => false,
+                    //     "inner" => __("My projects"),
+                    //     "dropdown" => [
+                    //         "/my_project/web" => [
+                    //             "active" => false,
+                    //             "inner" => __("web"),
+                    //             "dropdown" => [
+                    //                 "/my_project/web/laravel_site" => [
+                    //                     "active" => false,
+                    //                     "inner" => __("Site on Laravel framework"),
+                    //                 ],
+                    //             ],
+                    //         ],
+                    //     ],
+                    // ],
                 ],
             ];
             $request_url = $request->server()["REQUEST_URI"];

@@ -13,8 +13,7 @@
 
 <section class="first-image">
 
-    <div class="about-first-background-image  mb-3" 
-        style="display: flex; align-items: center; justify-content: center;">
+    <div class="about-first-background-image  mb-3">
         
             <div class="p-2 bd-highlight" style="text-align:center;">
                 <h1>{{__("Welcome to my personal website")}}</h1>
@@ -25,7 +24,7 @@
 
 </section>
 
-<section class="lite-image-text-section lite-background-image" style="background-image: url(web/about/750/fon.webp); background-size: cover;">
+<section class="lite-image-text-section about-lite-background-image">
     <div class="flex-column container">
         <div class="row g-4 py-3 ">
             <div class="col d-flex align-items-start justify-content-center">
@@ -42,8 +41,6 @@
         
     <div class="container">
         <h4 style="margin: 25px 0px 25px 0px;">{{ $h_1 }}:</h4>
-    </div>
-        
 
         <div class="row g-4 py-3 row-cols-1 row-cols-lg-3 align-self-end">
             
@@ -97,6 +94,10 @@
                 </div>
             </div>
         </div>
+    </div>
+        
+
+        
     </div>
 </section>
 

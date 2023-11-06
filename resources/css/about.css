@@ -10,6 +10,16 @@
     margin-top: 5rem!important;
 }
 
+.about-first-background-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-lite-background-image{
+    background-size: cover;
+}
+
 /* Large desktops and laptops */
 @media (min-width: 1200px) {
     .lite-image-text-section-image{
@@ -17,6 +27,9 @@
     }
     .about-first-background-image{
         background:linear-gradient(rgba(28, 28, 29, 0), rgba(28, 28, 29, 0)), url("../../public/web/about/1600/main_image1.webp") center center / cover no-repeat;
+    }
+    .about-lite-background-image{
+        background-image: url("../../public/web/about/1600/fon.webp"); 
     }
 }
 
@@ -26,12 +39,10 @@
         background:linear-gradient(rgba(28, 28, 29, 0), rgba(28, 28, 29, 0)), url("../../public/web/about/750/main_image1.webp") center center / cover no-repeat;
     }
 
-    .lite-image-text-section-image{
-        /* width: 800px; */
+    .about-lite-background-image{
+        background-image: url("../../public/web/about/750/fon.webp"); 
     }
-    .about-text-block-big{
-        /* display: none; */
-    }
+
     .about-text-block-small{
         display: none;
     }
@@ -42,15 +53,16 @@
     .about-first-background-image{
         background:linear-gradient(rgba(28, 28, 29, 0), rgba(28, 28, 29, 0)), url("../../public/web/about/750/main_image1.webp") center center / cover no-repeat;
     }
+
+    .about-lite-background-image{
+        background-image: url("../../public/web/about/750/fon.webp"); 
+    }
     
     .lite-image-text-section-image{
         width: 600px;
     }
     .about-text-block-big{
         display: none;
-    }
-    .about-text-block-small{
-        /* display: none; */
     }
 }
 
@@ -59,14 +71,11 @@
     .about-first-background-image{
         background:linear-gradient(rgba(28, 28, 29, 0), rgba(28, 28, 29, 0)), url("../../public/web/about/750/main_image1.webp") center center / cover no-repeat;
     }
-    .lite-image-text-section-image{
-        /* width: 800px; */
+    .about-lite-background-image{
+        background-image: url("../../public/web/about/750/fon.webp"); 
     }
     .about-text-block-big{
         display: none;
-    }
-    .about-text-block-small{
-        /* display: none; */
     }
 }
 
@@ -74,14 +83,11 @@
     .about-first-background-image{
         background:linear-gradient(rgba(28, 28, 29, 0), rgba(28, 28, 29, 0)), url("../../public/web/about/250/main_image1.webp") center center / cover no-repeat;
     }
-    .lite-image-text-section-image{
-        /* width: 800px; */
+    .about-lite-background-image{
+        background-image: url("../../public/web/about/250/fon.webp"); 
     }
     .about-text-block-big{
         display: none;
-    }
-    .about-text-block-small{
-        /* display: none; */
     }
 }
 
@@ -90,13 +96,10 @@
     .about-first-background-image{
         background:linear-gradient(rgba(28, 28, 29, 0), rgba(28, 28, 29, 0)), url("../../public/web/about/250/main_image1.webp") center center / cover no-repeat;
     }
-    .lite-image-text-section-image{
-        /* width: 800px; */
+    .about-lite-background-image{
+        background-image: url("../../public/web/about/250/fon.webp"); 
     }
     .about-text-block-big{
         display: none;
-    }
-    .about-text-block-small{
-        /* display: none; */
     }
 }
