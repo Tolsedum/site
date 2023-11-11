@@ -9,6 +9,11 @@
         "path":"private/articles/about",
         "file_name":"about"
     },
+    "material_support":{
+        "article_name":"material_support",
+        "path":"private/articles/material_support",
+        "file_name":"material_support"
+    },
     "laravel_site":{
         "article_name":"laravel_site",
         "path":"private/articles/my_progects/web_progects/laravel_site",

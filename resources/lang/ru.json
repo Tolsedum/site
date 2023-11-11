@@ -7,7 +7,7 @@
     "About project":"О проекте",
     "Project currently being worked on":"Проект над которым в данный момент ведётся работа",
     "Search": "Поиск",
-    "Copyright © Kuzmin Alexey Petrovich, 2023": "Авторские права © Кузьмин Алексей Петрович, 2023",
+    "Copyright © Kuzmin Alexey Petrovich, tolsedum@yandex.ru, 2023": "Авторские права © Кузьмин Алексей Петрович, tolsedum@yandex.ru, 2023",
     "What are we looking for?": "Что ищем?",
     "Welcome to my personal website":"Добро пожаловать на мой персональный сайт",
     "Enter your email": "Введите ваш email",
@@ -24,6 +24,9 @@
     "Production calendar":"Производственный календарь",
     "Importing a Tilda site": "Импорт сайта Tilda",
     "SEO analytics": "Модуль SEO аналитики",
+    "Project execution plan":"План выполнения проекта",
+    "Assistance":"Потдержать",
+    "I would be very grateful for moral and material support.": "Буду очень признателен за моральную и материальную потдержку.",
 
     "php progects": "Проекты php",
     "Here is a list of my projects written in PHP.": "Здесь выложен список моих проектов написанных на языке php"

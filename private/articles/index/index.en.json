@@ -4,5 +4,40 @@
     "p3":"On the pages of the blog you will find useful information about programming, application development, web design, tips for beginner programmers and much more.",
     "p4":"I also plan to cover about self-building various homemade devices, from a headphone amplifier, to a 3d printer.",
     "p5":"In addition, my programming projects will be available on my website.",
-    "p6":"I provide regular updates on current tasks and achievements so you can follow my progress and keep up to date with the latest news in the IT industry."
+    "p6":"I provide regular updates on current tasks and achievements so you can follow my progress and keep up to date with the latest news in the IT industry.",
+
+    "content_h1": "Identification of targets and audiences",
+    "content_1": "Determination of the purpose and target audience of the site, will help determine what information should be included on the site and how to organize its structure.",
+
+    "content_h2": "Competitor research",
+    "content_2": "Studying competitors' sites in a given niche, will help determine what makes them successful and what can be improved on the site being developed.",
+
+    "content_h3": "Creating a site plan and structure",
+    "content_3": "Create a site plan that defines which pages will be included in the site, and organize them into a logical structure. For example, home page, article or blog pages, contact information, etc.",
+
+    "content_h4": "Design Development.",
+    "content_4": "Develop the overall visual concept, select color palette, fonts and design elements. Determine what look and feel the site will convey to the visitor.",
+
+    "content_h5": "Content Creation",
+    "content_5": "Write or prepare the information that will be posted on the website. Include texts, images, videos and other materials that will be attractive and useful for the audience.",
+
+    "content_h6": "Development and programming",
+    "content_6": "Develop your own website using HTML, CSS, JavaScript PHP using Laravel framework. Ensure that the site is fully functional and responsive so that it looks good and works well on all devices.",
+
+    "content_h7": "Testing and debugging",
+    "content_7": "Before launching the site, conduct testing to make sure it works correctly and displays properly on all platforms and browsers.",
+
+    "content_h8": "Optimization for SEO",
+    "content_8": "Implement search engine optimization (SEO) settings on every page of the website. Optimize meta tags, titles, descriptions and keywords so that the site is easily discoverable and ranked in search engines.",
+
+    "content_h9": "Organization of mailing by subscription",
+    "content_9": "Create a subscription mechanism so that visitors can leave their contact details and receive regular notifications when new information is added from the site.",
+
+    "content_h10": "Launch and promotion",
+    "content_10": "After final testing and debugging, tell your friends, clients and social networks about it. Place information about the site in web directories and search engines to attract traffic and increase its visibility.",
+ 
+    "content_h11": "Update and support",
+    "content_11": "Update the site regularly after launch. Add new content, improve its functionality and monitor user feedback to keep the site relevant and responsive to the audience.",
+
+    "h5":"Let's make our dreams come true and make the world a better place!"
 }

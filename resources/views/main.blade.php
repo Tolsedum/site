@@ -21,7 +21,7 @@
         @endif
     </head>
 
-    <body class="d-flex h-100 text-center text-bg-dark vstack">
+    <body class="d-flex h-100 text-center  vstack" data-bs-theme="dark">
 
         <header class="mb-5">
             @include("components.header")

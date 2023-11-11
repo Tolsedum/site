@@ -37,17 +37,16 @@
     
 </section>
 
+<section class="container mt-5" data-bs-theme="light">
+    @include('components.blocks.projrct_execution_plan')
+</section>
 
-<section class="first-image mt-5">
-    
-    <div class="d-flex flex-row-reverse mb-3 index-last-background-image">
-        
-        <div class="me-10">
-            <div class="p-2">scroll bar</div>
-        </div>
+<section class="d-flex  justify-content-center" style="background-color: black;">
+                    
+    <div class="p-2 index-last-background-image d-flex align-items-center justify-content-center">
+        <h5>{{$h5}}</h5>
     </div>
-    
-    
+
 </section>
 
 

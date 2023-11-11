@@ -24,7 +24,7 @@
 
 </section>
 
-<section class="lite-image-text-section about-lite-background-image">
+<section class="lite-image-text-section about-lite-background-image" data-bs-theme="light">
     <div class="flex-column container">
         <div class="row g-4 py-3 ">
             <div class="col d-flex align-items-start justify-content-center">
@@ -125,7 +125,7 @@
     
 </section>
 
-<section class=" d-flex flex-column align-items-center text-center lite-image-text-section lite-background-image" 
+<section data-bs-theme="light" class=" d-flex flex-column align-items-center text-center lite-image-text-section lite-background-image" 
     style="background-image: url(web/about/750/fon2.webp); background-size: cover;">
     <div class="container-small mb-5 mt-5">
         <div class="row g-4 py-3 ">
@@ -163,7 +163,7 @@
         </div>
         <div class="col mt-4">
             {{ $descr_mony }} <br>
-            {{ $name_payment }}: {{ $mony }}
+            <a href="https://yoomoney.ru/to/410014233800351" class="btn btn-primary">{{ __('Assistance')}}</a> 
         </div>
     </div>
 </section>
