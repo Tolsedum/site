@@ -20,6 +20,10 @@
     color: rgb(133 140 147 / 75%) !important;
 }
 
+.breadcrumb-nav{
+    padding: 1rem !important;
+}
+
 .dark-placeholder-color::placeholder {
     color: #fff !important;
 }
@@ -116,6 +120,8 @@
     height:100%; 
 }
 
+
+
 /* Large desktops and laptops */
 @media (min-width: 1200px) {
     
@@ -167,6 +173,11 @@
     }
     .form-control{
         font-size: 1.5rem !important;
+    }
+
+    .breadcrumb-nav{
+        padding-top: 3rem!important;
+        /* padding-top: 3rem!important; */
     }
 }
 

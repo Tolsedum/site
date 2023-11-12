@@ -48,7 +48,7 @@
                 <div class="icon-square text-body-emphasis  d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
                     <img src="web/icon/pay_tool.png" width="35px" height="35px" style="margin: 5px;" />
                 </div>
-                <div>
+                <div style="min-width:362px;">
                     <h5 class="fs-4 text-body-emphasis text-start">{{ __('Integration with payment systems')}}</h3>
 
                         <ul class="list-unstyled mt-3 mb-4 text-start">
@@ -64,7 +64,7 @@
                 <div class="icon-square text-body-emphasis  d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
                     <img src="web/icon/email.png" width="35px" height="35px" style="margin: 5px;" />
                 </div>
-                <div>
+                <div style="min-width:362px;">
                     <h5 class="fs-4 text-body-emphasis text-start">{{ __('Integration with mailing list services')}}</h3>
 
                         <ul class="list-unstyled mt-3 mb-4 text-start">
@@ -79,7 +79,7 @@
                 <div class="icon-square text-body-emphasis  d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
                     <img src="web/icon/tool.png" width="35px" height="35px" style="margin: 5px;" />
                 </div>
-                <div>
+                <div style="min-width:362px;">
                     <h5 class="fs-4 text-body-emphasis text-start">{{ __('And the other')}}</h3>
 
                         <ul class="list-unstyled mt-3 mb-4 text-start">
