@@ -16,18 +16,9 @@ use App\Http\Controllers\MyPHPProjectsController;
 Route::post('/set_language', "App\Http\Controllers\InfoController@set_language");
 
 Route::get('/', "App\Http\Controllers\InfoController@index");
-// Route::match(['get', 'post'], '/', "App\Http\Controllers\InfoController@index");
-// Route::get('/', [InfoController::class, "index"])->name("index");
-// Route::match(['get', 'post'], '/', [InfoController::class, "index"])->name("index");
-
 Route::get('/about', "App\Http\Controllers\InfoController@about");
-// Route::match(['get', 'post'], '/about', "App\Http\Controllers\InfoController@about");
-// Route::match(['get', 'post'], '/about', [InfoController::class, "about"])->name("about");
+Route::get('/material_support', "App\Http\Controllers\InfoController@material_support");
 
 Route::get('/my_project', "App\Http\Controllers\MyPHPProjectsController@myProject");
 Route::get('/my_project/web', "App\Http\Controllers\MyPHPProjectsController@listWebProgects");
 Route::get('/my_project/web/laravel_site', "App\Http\Controllers\MyPHPProjectsController@laravelSite");
-
-// Route::get('/user/{id}/{name}', function ($id, $name) {
-//     return "ID: {$id} NAME: {$name}";
-// });

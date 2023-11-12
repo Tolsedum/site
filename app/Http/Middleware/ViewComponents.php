@@ -54,6 +54,10 @@ class ViewComponents
                         "active" => false,
                         "inner" => __("Resume"),
                     ],
+                    "/material_support" => [
+                        "active" => false,
+                        "inner" => __("Support"),
+                    ],
                     // "/my_project" => [
                     //     "active" => false,
                     //     "inner" => __("My projects"),

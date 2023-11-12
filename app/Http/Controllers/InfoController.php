@@ -53,9 +53,9 @@ class InfoController extends ControllerTemplate{
             $var = $article->getArticleContent();
         }
         $var["style_list"] = [
-            url("resources/css/about.css")
+            url("resources/css/material_support.css")
         ];
-        return $this->defaultInit($request, "about", $var);
+        return $this->defaultInit($request, "material_support", $var);
     }
 
     public function set_language(Request &$request){

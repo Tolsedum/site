@@ -1,11 +1,60 @@
-Буду очень признателен за вашу моральную и материальную поддержку. В данный момент я столкнулся с серьезными трудностями, которые затронули как мою эмоциональную, так и финансовую стабильность.
+@extends('main')
 
-Моральная поддержка играет огромную роль в моей жизни. Зная, что есть люди, которые верят в меня и поддерживают меня, я получаю силу и уверенность в себе. Ваша поддержка помогает мне преодолевать трудности, сохранять оптимизм и не сдаваться перед трудностями, которые могут сложиться на моем пути.
+@section("title")
+{{__("Support")}}
+@endsection
 
-Кроме моральной поддержки, материальная помощь также играет важную роль в моей жизни. В данный момент, я испытываю финансовые затруднения, которые мешают мне реализовывать свои планы и мечты. Ваша щедрость будет внушительным вкладом и поможет мне преодолеть временные трудности. Я глубоко ценю любую финансовую помощь, которую вы можете оказать мне, и обещаю использовать ее с умом и ответственностью.
+@section("description")
 
-Будьте уверены, что я высоко ценю вашу поддержку и буду стараться воздать вам должное. Буду признателен за любую помощь, будь то совет, вдохновение, слово поддержки или материальные средства. То, что вы выбрали помочь мне в трудный момент, говорит о вашей доброте и заботе о других людях.
+@endsection
 
-Еще раз хочу поблагодарить вас за вашу щедрость и поддержку. Ваше доброе деяние будет иметь огромное значение и подтвердит, что в мире существуют замечательные люди, готовые помочь другим в их трудностях. Я буду делать все возможное для того, чтобы преодолеть эти сложности и доказать, что ваша поддержка не будет напрасной.
+@section('main_content')
+    
+<section class="first-image support-first-background-image">
 
-Спасибо за вашу доброту и заботу. Я очень ценю вашу помощь и буду всегда благодарен за вашу поддержку.
+    <div class="d-flex justify-content-end align-items-center">
+        <div class="p-2" style="text-align:center;">
+        <p >
+            Ваше сердце - сила перемен:
+        </p>
+        <p>
+            финансовая поддержка, чтобы изменить мир к лучшему!
+        </p>
+        </div>
+    </div>
+
+</section>
+
+<section class="container text-center mt-5">
+    
+    <div class="row align-items-start">
+        <div class="col">
+            <form>
+                <div class="mb-3">
+                    <!-- <label for="exampleFormControlInput1" class="form-label">Email address</label> -->
+                    <input type="email" class="form-control bg-dark text-bg-dark dark-placeholder-color" id="exampleFormControlInput1" placeholder="{{ __('Enter your email')}}">
+
+                </div>
+                <div class="mb-3">
+                    <!-- <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label> -->
+                    <textarea placeholder="{{ __('Enter your message') }}" class="bg-dark text-bg-dark form-control dark-placeholder-color" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="mb-3 form-check text-start">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">{{__('Send me a newsletter')}}</label>
+                </div>
+                <div class="mb-3 form-check text-end">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+
+            </form>
+        </div>
+        <div class="col mt-4">
+            {{ __('I would be very grateful for moral and material support.') }} <br>
+            <a href="https://yoomoney.ru/to/410014233800351" class="btn btn-primary">{{ __('Assistance')}}</a> 
+        </div>
+    </div>
+</section>
+@endsection
+
+

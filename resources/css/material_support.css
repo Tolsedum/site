@@ -1,0 +1,63 @@
+.support-first-background-image{
+    background-image: url("../../public/web/material_support/donate.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+	width: 100%; 
+    height: 100%;
+    background-position: center;
+    /* background:linear-gradient(rgba(28, 28, 29, 0), rgba(28, 28, 29, 0)),  center center / cover no-repeat; */
+}
+/* .first-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+    .index-last-background-image{
+        background-image: url("../../public/web/index/1600/potted-tree-wooden-surface.webp");
+    }
+}
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .index-last-background-image{
+        background-image: url("../../public/web/index/750/potted-tree-wooden-surface.webp");
+    }
+    
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+    .index-last-background-image{
+        background-image: url("../../public/web/index/750/potted-tree-wooden-surface.webp");
+    }
+    .support-first-background-image>div>div{
+        width: 50%;
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+    
+    
+    .index-last-background-image{
+        background-image: url("../../public/web/index/750/potted-tree-wooden-surface.webp");
+    }
+}
+
+@media (max-width: 650) {
+    
+    .index-last-background-image{
+        background-image: url("../../public/web/index/250/potted-tree-wooden-surface.webp");
+    }
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+    
+    .index-last-background-image{
+        background-image: url("../../public/web/index/250/potted-tree-wooden-surface.webp");
+    }
+}
