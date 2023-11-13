@@ -51,7 +51,7 @@
         </div>
         <div class="col mt-4">
             {{ __('I would be very grateful for moral and material support.') }} <br>
-            <a href="https://yoomoney.ru/to/410014233800351" class="btn btn-primary">{{ __('Assistance')}}</a> 
+            <a href="https://yoomoney.ru/to/410014233800351" target="_blank" class="btn btn-primary">{{ __('Assistance')}}</a> 
         </div>
     </div>
 </section>

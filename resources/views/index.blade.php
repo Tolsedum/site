@@ -27,7 +27,7 @@
 <section class="lite-image-text-section lite-background-image mt-5">
 
         <div class="d-flex justify-content-center flex-row mb-3 container">
-            <div class="p-2 container" >|{{__('About project')}}|</div>
+            <div class="p-2 container" style="min-width: 196px;">|{{__('About project')}}|</div>
             <div class="p-2 text-start">
                 <p>{{ $p1 }} {{ $p2 }}</p>
                 <p>{{ $p3 }} {{ $p4 }}</p>

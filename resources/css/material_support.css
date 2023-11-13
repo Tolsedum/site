@@ -25,7 +25,9 @@
     .index-last-background-image{
         background-image: url("../../public/web/index/750/potted-tree-wooden-surface.webp");
     }
-    
+    .support-first-background-image>div>div{
+        width: 55%;
+    }
 }
 
 /* Portrait tablets and small desktops */
@@ -45,12 +47,18 @@
     .index-last-background-image{
         background-image: url("../../public/web/index/750/potted-tree-wooden-surface.webp");
     }
+    .support-first-background-image>div>div{
+        width: 40%;
+    }
 }
 
 @media (max-width: 650) {
     
     .index-last-background-image{
         background-image: url("../../public/web/index/250/potted-tree-wooden-surface.webp");
+    }
+    .support-first-background-image>div>div{
+        width: 30%;
     }
 }
 
@@ -59,5 +67,8 @@
     
     .index-last-background-image{
         background-image: url("../../public/web/index/250/potted-tree-wooden-surface.webp");
+    }
+    .support-first-background-image>div>div{
+        width: 20%;
     }
 }
