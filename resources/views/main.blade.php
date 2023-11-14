@@ -28,7 +28,7 @@
         </header>
 
         <main class="w-100" style="flex: 1 0 auto;">
-            @if(!empty($breadcrumb) && count($breadcrumb) > 1) @include('components.breadcrumb', $breadcrumb) @endif
+            @if(!empty($breadcrumb) && count($breadcrumb) > 1) @include('components.breadcrumb', ["breadcrumb" => $breadcrumb]) @endif
             @yield('main_content')
         </main>
 

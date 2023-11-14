@@ -14,6 +14,8 @@ use App\Http\Controllers\MyPHPProjectsController;
 |
 */
 Route::post('/set_language', "App\Http\Controllers\InfoController@set_language");
+Route::post('/save_message_assistance', "App\Http\Controllers\InfoController@save_message_assistance");
+
 
 Route::get('/', "App\Http\Controllers\InfoController@index");
 Route::get('/about', "App\Http\Controllers\InfoController@about");

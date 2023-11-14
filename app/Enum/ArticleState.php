@@ -2,9 +2,9 @@
 
 namespace App\Enum;
 
-use ReflectionClass;
+use App\Enum\Enum;
 
-class ArticleState{
+class ArticleState extends Enum{
     /** Available for everyone to read */
     const AVAILABLE = "available";
     /** Access to a list of IP addresses */
@@ -16,17 +16,7 @@ class ArticleState{
     /** Deleted */
     const DELETED = "deleted";
 
-    public static function getParams(array $params = []){
-        $ref = new ReflectionClass(static::class);
-        $list_const = $ref->getConstants();
-        return $list_const;
-    }
+    
 
-    public static function getConstValus(array $params = []){
-        $ret_values = [];
-        foreach (static::getParams() as $value) {
-            $ret_values[] = $value;
-        }
-        return $ret_values;
-    }
+    
 }

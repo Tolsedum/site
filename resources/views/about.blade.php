@@ -13,7 +13,7 @@
 
 <section class="first-image">
 
-    <div class="about-first-background-image  mb-3">
+    <div class="mb-3 about-first-background-image align-items-center">
         
             <div class="p-2 bd-highlight" style="text-align:center;">
                 <h1>{{__("Welcome to my personal website")}}</h1>
@@ -138,34 +138,7 @@
 
 <hr>
 <section class="container text-center">
-    
-    <div class="row align-items-start">
-        <div class="col">
-            <form>
-                <div class="mb-3">
-                    <!-- <label for="exampleFormControlInput1" class="form-label">Email address</label> -->
-                    <input type="email" class="form-control bg-dark text-bg-dark dark-placeholder-color" id="exampleFormControlInput1" placeholder="{{ __('Enter your email')}}">
-
-                </div>
-                <div class="mb-3">
-                    <!-- <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label> -->
-                    <textarea placeholder="{{ __('Enter your message') }}" class="bg-dark text-bg-dark form-control dark-placeholder-color" id="exampleFormControlTextarea1" rows="3"></textarea>
-                </div>
-                <div class="mb-3 form-check text-start">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">{{__('Send me a newsletter')}}</label>
-                </div>
-                <div class="mb-3 form-check text-end">
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </div>
-
-            </form>
-        </div>
-        <div class="col mt-4">
-            {{ __('I would be very grateful for moral and material support.') }} <br>
-            <a href="https://yoomoney.ru/to/410014233800351" class="btn btn-primary">{{ __('Assistance')}}</a> 
-        </div>
-    </div>
+    @include('components.blocks.assistance_form', ['show_donate' => false])
 </section>
 
 @endsection
