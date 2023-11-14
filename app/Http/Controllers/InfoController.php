@@ -3,12 +3,13 @@
 namespace App\Http\Controllers;
 
 use App\Models\Article;
+use App\Models\Subscribers;
+use App\Models\Message;
+use App\Enum\ObjectState;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class InfoController extends ControllerTemplate{
-
-    
-
     public function index(Request $request){
         $var = [];
         $article = Article::where("article_name", "index")->first();
@@ -25,7 +26,7 @@ class InfoController extends ControllerTemplate{
             4 => ["active" => true],
             5 => ["active" => true],
             6 => ["active" => true],
-            7 => ["active" => false],
+            7 => ["active" => true],
             8 => ["active" => false],
             9 => ["active" => false],
             10 => ["active" => false],
@@ -65,5 +66,43 @@ class InfoController extends ControllerTemplate{
             $request->session()->put("selected_language", $select_language);
         }
         return redirect($this->getReturnUrl($request));
+    }
+
+    public function save_message_assistance(Request $request){
+        $return_url = $request->get("return_url");
+        $email = $request->get("email");
+        $message = $request->get("message");
+        $is_subscribe = !empty($request->get("mailing")) ? true : false;
+        $is_send = true;
+        if(!empty($email) && !empty($message)){
+            $subscriber = Subscribers::where("email", $email)->first();
+            if(empty($subscriber)){
+                $params = [
+                    "email" => $email,
+                    "is_subscribe" => $is_subscribe,
+                    "state" => ObjectState::ENABLED,
+                    "date_create" => date("Y-m-d H:i:s"),
+                ];
+                DB::table("subscribers")->insert($params);
+                $subscriber = Subscribers::where("email", $email)->first();
+            }
+            $subscriber->is_subscribe = $is_subscribe;
+            $subscriber->save();
+            $hash = md5($message);
+            $messageObj = Message::where("hash" , $hash)->first();
+            if(empty($messageObj)){
+                $params = [
+                    "subscribers_id" => $subscriber->subscribers_id,
+                    "date_create" => date("Y-m-d H:i:s"),
+                    "message" => $message,
+                    "hash" => $hash,
+                    "state" => ObjectState::ENABLED,
+                ];
+                DB::table("messages")->insert($params);
+            }
+        }else{
+            $is_send = false;
+        }
+        return redirect($this->getReturnUrl($request, ["is_send" => $is_send]));
     }
 }

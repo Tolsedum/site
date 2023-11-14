@@ -1,7 +1,9 @@
 {
     "Home": "Главная",
     "Resume": "Обо мне",
-    "Support":"Поддержать",
+    "Assistance":"Поддержать",
+    "Send": "Отправить",
+    "Your message has been received":"Ваше сообщение принято",
     "A page describing my experiences and plans, for self-development":"Страница с описанием моего опыта и планов, для саморазвития",
     "My projects": "Мои проекты",
     "it's a Laravel framework site.": "это сайт на фреймворке Laravel",
@@ -26,7 +28,6 @@
     "Importing a Tilda site": "Импорт сайта Tilda",
     "SEO analytics": "Модуль SEO аналитики",
     "Project execution plan":"План выполнения проекта",
-    "Assistance":"Потдержать",
     "I would be very grateful for moral and material support.": "Буду очень признателен за моральную и материальную потдержку.",
 
     "php progects": "Проекты php",

@@ -23,12 +23,14 @@ class ViewComponents
         foreach (explode("/", $request->getRequestUri()) as $crumb) {
             if(!empty($crumb)){
                 $url_line .= "/" . $crumb;
-                $breadcrumb[$current_element[$url_line]["inner"]] = [
-                    "href" => $url_line,
-                    "active" => false,
-                ];
-                if(isset($current_element[$url_line]["dropdown"])){
-                    $current_element = $current_element[$url_line]["dropdown"];
+                if(isset($current_element[$url_line]["inner"])){
+                    $breadcrumb[$current_element[$url_line]["inner"]] = [
+                        "href" => $url_line,
+                        "active" => false,
+                    ];
+                    if(isset($current_element[$url_line]["dropdown"])){
+                        $current_element = $current_element[$url_line]["dropdown"];
+                    }
                 }
             }
         }
@@ -56,7 +58,7 @@ class ViewComponents
                     ],
                     "/material_support" => [
                         "active" => false,
-                        "inner" => __("Support"),
+                        "inner" => __("Assistance"),
                     ],
                     // "/my_project" => [
                     //     "active" => false,

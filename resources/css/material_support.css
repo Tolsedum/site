@@ -8,11 +8,9 @@
     background-position: center;
     /* background:linear-gradient(rgba(28, 28, 29, 0), rgba(28, 28, 29, 0)),  center center / cover no-repeat; */
 }
-/* .first-image{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
+.first-image>div>div{
+    padding-right: 10%;
+}
 /* Large desktops and laptops */
 @media (min-width: 1200px) {
     .index-last-background-image{

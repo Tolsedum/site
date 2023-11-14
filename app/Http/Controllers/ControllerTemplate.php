@@ -33,7 +33,7 @@ class ControllerTemplate extends Controller{
         ];
     }
 
-    protected function getReturnUrl(Request $request){
+    protected function getReturnUrl(Request $request, $suffix = []){
         $return_url = $request->get("return_url");
         if(empty($return_url)){
             $return_url = $request->server()["HTTP_REFERER"];
@@ -44,6 +44,16 @@ class ControllerTemplate extends Controller{
             $return_url = substr($return_url, $pos);
         }else{
             $return_url = "/";
+        }
+        if(!empty($suffix)){
+            $suf = "?";
+            if(is_numeric(strpos($return_url, $suf))){
+                $suf = "&";
+            }
+            foreach ($suffix as $key => $value) {
+                $return_url .=  $suf . $key . "=". $value;
+                $suf = "&";
+            }
         }
         return $return_url;
     }
