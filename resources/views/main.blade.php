@@ -3,10 +3,11 @@
     <!-- class="h-100" -->
     <head>
         <title>@yield("title")</title>
-
+        <meta name="yandex-verification" content="5e8871d7c39435ee" />
         <meta charset="utf-8">
         <meta name="description" content="@yield('description')">
         <meta name="author" content="Tolsedum">
+        <link rel="icon" href="web/favicon.ico" type="image/x-icon">
 
         <!-- Custom styles for this template -->
         @if(!empty($style_list))
