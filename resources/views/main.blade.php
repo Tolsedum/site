@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en" class="h-100">
-    <!-- class="h-100" -->
     <head>
         <title>@yield("title")</title>
         <meta name="yandex-verification" content="5e8871d7c39435ee" />
         <meta charset="utf-8">
         <meta name="description" content="@yield('description')">
         <meta name="author" content="Tolsedum">
+        <link rel="alternate" hreflang="en" href="{{ url('?lang=en') }}" />
+        <link rel="alternate" hreflang="ru" href="{{ url('?lang=ru') }}" />
         <link rel="icon" href="web/favicon.ico" type="image/x-icon">
 
         <!-- Custom styles for this template -->
@@ -37,9 +38,6 @@
             @include("components.footer")
         </footer>
 
-        
-        <!-- <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-        <script type='module' src="resources/js/app.js"></script> -->
         @if(!empty($script_post_list))
             @foreach($script_post_list as $script_href)
                 @include("components.create_script", $script_href)

@@ -16,6 +16,7 @@ class ViewComponents
 
     protected function getBreadcrumb(Request $request){
         $current_element = static::$elements["ul"];
+        // ToDo Если параметры в запросе, со не подсвечивается меню
         $breadcrumb = [
             $current_element["/"]["inner"] => ["href" => "/", "active" => false],
         ];
@@ -51,26 +52,32 @@ class ViewComponents
                     "/" => [
                         "active" => false,
                         "inner" => __("Home"),
+                        "date_edit" => "2023-11-15",
                     ],
                     "/about" => [
                         "active" => false,
                         "inner" => __("Resume"),
+                        "date_edit" => "2023-11-15",
                     ],
                     "/material_support" => [
                         "active" => false,
                         "inner" => __("Assistance"),
+                        "date_edit" => "2023-11-15",
                     ],
                     // "/my_project" => [
                     //     "active" => false,
                     //     "inner" => __("My projects"),
+                    //     "date_edit" => "2023-11-15",
                     //     "dropdown" => [
                     //         "/my_project/web" => [
                     //             "active" => false,
                     //             "inner" => __("web"),
+                    //             "date_edit" => "2023-11-15",
                     //             "dropdown" => [
                     //                 "/my_project/web/laravel_site" => [
                     //                     "active" => false,
                     //                     "inner" => __("Site on Laravel framework"),
+                    //                     "date_edit" => "2023-11-15",
                     //                 ],
                     //             ],
                     //         ],

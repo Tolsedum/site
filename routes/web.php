@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\InfoController;
 use App\Http\Controllers\MyPHPProjectsController;
+use App\Http\Controllers\SitemapController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +14,8 @@ use App\Http\Controllers\MyPHPProjectsController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+
+
 Route::post('/set_language', "App\Http\Controllers\InfoController@set_language");
 Route::post('/save_message_assistance', "App\Http\Controllers\InfoController@save_message_assistance");
 
@@ -24,3 +27,5 @@ Route::get('/material_support', "App\Http\Controllers\InfoController@material_su
 Route::get('/my_project', "App\Http\Controllers\MyPHPProjectsController@myProject");
 Route::get('/my_project/web', "App\Http\Controllers\MyPHPProjectsController@listWebProgects");
 Route::get('/my_project/web/laravel_site', "App\Http\Controllers\MyPHPProjectsController@laravelSite");
+
+Route::get('/sitemap', 'App\Http\Controllers\SitemapController@getSitemap')->middleware(\App\Http\Middleware\ViewComponents::class);
