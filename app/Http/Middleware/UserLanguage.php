@@ -9,7 +9,7 @@ use Symfony\Component\HttpFoundation\Response;
 class UserLanguage
 {
     static protected $languages = ["ru", "en"];
-    static protected $default_local = "en";
+    static protected $default_local = "ru";
 
 
     public static function getLanguages(){

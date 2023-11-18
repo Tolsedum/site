@@ -14,7 +14,7 @@ class InfoController extends ControllerTemplate{
     public function index(Request $request){
         $var = [
             "meta_property" => [
-                "title" => __("Index"),
+                "title" => __("Home"),
                 "site_name" => "Tolsedum",
                 "url" => url("/"),
                 "description" => __("A description of the project currently being worked on, with a description of the tasks completed."),
