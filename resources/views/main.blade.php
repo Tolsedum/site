@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="en" class="h-100">
     <head>
-        <title>@yield("title")</title>
+        <title>{{ $meta_property["title"] }}</title>
         <meta name="yandex-verification" content="5e8871d7c39435ee" />
+        <meta name="google-site-verification" content="-D16rPN490d57ardgW5WQlB3KtIBmJCNmNwvxTfJ0jU" />
         <meta charset="utf-8">
-        <meta name="description" content="@yield('description')">
+        <meta name="description" content="{{ $meta_property['description'] }}">
         <meta name="author" content="Tolsedum">
+        @if(!empty($meta_property))
+            @include('components.meta_property', ["property" => $meta_property])
+        @endif
+
         <link rel="alternate" hreflang="en" href="{{ url('?lang=en') }}" />
         <link rel="alternate" hreflang="ru" href="{{ url('?lang=ru') }}" />
         <link rel="icon" href="web/favicon.ico" type="image/x-icon">

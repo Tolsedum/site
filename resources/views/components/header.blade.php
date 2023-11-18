@@ -26,7 +26,7 @@
     <form class="d-flex" method="post" role="search" action="/set_language" name="form_select_language" id="form_select_language">
       {{ csrf_field() }}
       <input type="hidden" name="return_url" value="{{ url()->current() }}" />
-      <select id="new_language" name="new_language">
+      <select id="new_language" name="new_language" class="new_language-style">
         @foreach($list_languges as $lang)
           <option value="{{$lang}}" @if($lang == app()->getLocale())selected @endif>{{strtoupper($lang)}}</option>
         @endforeach

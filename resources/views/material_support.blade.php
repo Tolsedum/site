@@ -1,13 +1,5 @@
 @extends('main')
 
-@section("title")
-{{__("Assistance")}}
-@endsection
-
-@section("description")
-
-@endsection
-
 @section('main_content')
     
 <section class="first-image support-first-background-image">
@@ -25,8 +17,17 @@
 
 </section>
 
+<section data-bs-theme="light" class="text-material-support d-flex justify-content-start align-items-center text-material-support-image">
+    <div class="container-small mb-5 mt-5">
+        <div class="row g-4 py-3 ms-10" style="width:55%;">
+            {{ $p_1 }}
+        </div>
+    </div>
+    
+</section>
+
 <section class="container text-center mt-5">
-    @include('components.blocks.assistance_form')
+    @include('components.blocks.assistance_form', ["show_message" => false])
 </section>
 @endsection
 

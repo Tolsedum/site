@@ -7,6 +7,7 @@
     </div>
 @endif
 <div class="row align-items-start">
+    @if((isset($show_message) && $show_message == true) || !isset($show_message))
     <div class="col">
         <form action="/save_message_assistance" method="post">
             @csrf <!-- {{ csrf_field() }} -->
@@ -26,7 +27,7 @@
             <input type="hidden" name="return_url" value="/{{ Route::current()->uri }}">
         </form>
     </div>
-    
+    @endif
     @if((isset($show_donate) && $show_donate == true) || !isset($show_donate))
         <div class="col mt-4">
             {{ __('I would be very grateful for moral and material support.') }} <br>

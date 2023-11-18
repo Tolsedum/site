@@ -1,5 +1,5 @@
 .support-first-background-image{
-    background-image: url("../../public/web/material_support/donate.jpg");
+    background-image: url("../../public/web/material_support/1600/donate.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-color: black;
@@ -11,8 +11,25 @@
 .first-image>div>div{
     padding-right: 10%;
 }
+.text-material-support-image{
+    background-image: url("../../public/web/material_support/1600/tree-grows-coin-glass-jar-with-copy-space.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: white;
+	width: 100%; 
+    /* height: 100%; */
+    background-position: top;
+}
+
+.text-material-support{
+    color:black;
+}
+
 /* Large desktops and laptops */
 @media (min-width: 1200px) {
+    .support-first-background-image>div>div{
+        width: 55%;
+    }
     .index-last-background-image{
         background-image: url("../../public/web/index/1600/potted-tree-wooden-surface.webp");
     }
@@ -20,6 +37,9 @@
 
 /* Portrait tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
+    .support-first-background-image{
+        background-image: url("../../public/web/material_support/750/donate.webp");
+    }
     .index-last-background-image{
         background-image: url("../../public/web/index/750/potted-tree-wooden-surface.webp");
     }
@@ -30,6 +50,9 @@
 
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
+    .support-first-background-image{
+        background-image: url("../../public/web/material_support/750/donate.webp");
+    }
     .index-last-background-image{
         background-image: url("../../public/web/index/750/potted-tree-wooden-surface.webp");
     }
@@ -40,8 +63,9 @@
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
-    
-    
+    .support-first-background-image{
+        background-image: url("../../public/web/material_support/750/donate.webp");
+    }
     .index-last-background-image{
         background-image: url("../../public/web/index/750/potted-tree-wooden-surface.webp");
     }
@@ -51,7 +75,9 @@
 }
 
 @media (max-width: 650) {
-    
+    .support-first-background-image{
+        background-image: url("../../public/web/material_support/250/donate.webp");
+    }
     .index-last-background-image{
         background-image: url("../../public/web/index/250/potted-tree-wooden-surface.webp");
     }
@@ -62,7 +88,9 @@
 
 /* Landscape phones and smaller */
 @media (max-width: 480px) {
-    
+    .support-first-background-image{
+        background-image: url("../../public/web/material_support/250/donate.webp");
+    }
     .index-last-background-image{
         background-image: url("../../public/web/index/250/potted-tree-wooden-surface.webp");
     }

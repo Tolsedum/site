@@ -1,25 +1,18 @@
 {
     "Home": "Главная",
-    "Resume": "Обо мне",
-    "Assistance":"Поддержать",
-    "Send": "Отправить",
-    "Your message has been received":"Ваше сообщение принято",
-    "A page describing my experiences and plans, for self-development":"Страница с описанием моего опыта и планов, для саморазвития",
+    "A description of the project currently being worked on, with a description of the tasks completed.": "Описание проекта, над которым в данный момент ведётся работа, с описанием выполненных задач.",
     "My projects": "Мои проекты",
     "it's a Laravel framework site.": "это сайт на фреймворке Laravel",
     "About project":"О проекте",
     "Project currently being worked on":"Проект над которым в данный момент ведётся работа",
-    "Search": "Поиск",
-    "Copyright © Kuzmin Alexey Petrovich, tolsedum@yandex.ru, 2023": "Авторские права © Кузьмин Алексей Петрович, tolsedum@yandex.ru, 2023",
-    "What are we looking for?": "Что ищем?",
+
+
+    "Resume": "Обо мне",
     "Welcome to my personal website":"Добро пожаловать на мой персональный сайт",
-    "Enter your email": "Введите ваш email",
-    "Enter your message": "Введите ваше сообщение",
-    "Send me a newsletter": "Отправлять мне рассылку",
+    "My name is Alexey and I am glad to welcome you on my resource. On this page you will find a description of my experience and plans for self-development.":"Меня зовут Алексей и я рад приветствовать вас на своем ресурсе. На данной странице вы найдёте описание моего опыта и планов, для саморазвития.",
     "Integration with payment systems": "Платёжные системы",
     "Integration with mailing list services": "Сервисы рассылок",
     "And the other": "И другое",
-    "Icons and images provided by the site":"Иконки и изображения предоставлены сайтом",
     "icon address": "Эл. адрес иконки",
     "Russian Post": "Почта России",
     "Assembling orders into boxes": "Сборка заказов по коробкам",
@@ -28,6 +21,21 @@
     "Importing a Tilda site": "Импорт сайта Tilda",
     "SEO analytics": "Модуль SEO аналитики",
     "Project execution plan":"План выполнения проекта",
+
+
+    "You can support me in various forms - share my content on social networks, leave comments and reviews, tell your friends and colleagues about my site. In addition, if you want to support me financially, you can make a donation to my project. These funds will allow me to improve the content, develop new different projects and keep the site running. Together we can achieve great results!":"Вы можете поддержать меня в различных формах - делитесь моим контентом в социальных сетях, оставляйте комментарии и отзывы, рассказывайте о моём сайте своим друзьям и коллегам. Кроме того, если вы хотите поддержать меня материально, то можете сделать пожертвование моему проекту. Эти средства позволят мне улучшить контент, развивать новые различные проекты и поддерживать работу сайта. Вместе мы можем достичь больших результатов!",
+
+
+    "Assistance":"Поддержать",
+    "Send": "Отправить",
+    "Your message has been received":"Ваше сообщение принято",
+    "Search": "Поиск",
+    "Icons and images provided by the site":"Иконки и изображения предоставлены сайтом",
+    "Copyright © Kuzmin Alexey Petrovich, tolsedum@yandex.ru, 2023": "Авторские права © Кузьмин Алексей Петрович, tolsedum@yandex.ru, 2023",
+    "What are we looking for?": "Что ищем?",
+    "Enter your email": "Введите ваш email",
+    "Enter your message": "Введите ваше сообщение",
+    "Send me a newsletter": "Отправлять мне рассылку",
     "I would be very grateful for moral and material support.": "Буду очень признателен за моральную и материальную потдержку.",
 
     "php progects": "Проекты php",

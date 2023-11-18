@@ -1,13 +1,5 @@
 @extends('main')
 
-@section("title")
-{{__("Index")}}
-@endsection
-
-@section("description")
-{{__("Main page")}}
-@endsection
-
 @section('main_content')
     
 <section class="first-image">

@@ -1,18 +1,7 @@
 @extends('main')
 
-@section("title")
-{{__("Resume")}}
-@endsection
-
-@section("description")
-{{ __("A page describing my experiences and plans, for self-development") }}
-@endsection
-
 @section('main_content')
-
-
 <section class="first-image">
-
     <div class="mb-3 about-first-background-image align-items-center">
         
             <div class="p-2 bd-highlight" style="text-align:center;">

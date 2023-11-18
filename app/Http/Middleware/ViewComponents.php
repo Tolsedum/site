@@ -14,14 +14,24 @@ class ViewComponents
         return static::$elements;
     }
 
+    public function removeParams($url){
+        $_url = $url;
+        $pos = strpos($_url, "?");
+        if(is_numeric($pos)){
+            $_url = strstr($_url, "?", true);
+        }
+        $_url = trim($_url, '/');
+        return $_url;
+    }   
+
     protected function getBreadcrumb(Request $request){
         $current_element = static::$elements["ul"];
-        // ToDo Если параметры в запросе, со не подсвечивается меню
         $breadcrumb = [
             $current_element["/"]["inner"] => ["href" => "/", "active" => false],
         ];
         $url_line = "";
-        foreach (explode("/", $request->getRequestUri()) as $crumb) {
+        
+        foreach (explode("/", $this->removeParams($request->getRequestUri())) as $crumb) {
             if(!empty($crumb)){
                 $url_line .= "/" . $crumb;
                 if(isset($current_element[$url_line]["inner"])){
@@ -36,7 +46,6 @@ class ViewComponents
             }
         }
         $breadcrumb[array_key_last($breadcrumb)]["active"] = true;
-        
         return $breadcrumb;
     }
 
@@ -85,7 +94,7 @@ class ViewComponents
                     // ],
                 ],
             ];
-            $request_url = $request->server()["REQUEST_URI"];
+            $request_url = '/'.$this->removeParams($request->server()["REQUEST_URI"]);
             $set_active = false;
             foreach (static::$elements["ul"] as $url => &$data) {
                 if($url == $request_url){

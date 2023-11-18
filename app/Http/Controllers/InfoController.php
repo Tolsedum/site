@@ -10,11 +10,21 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
 class InfoController extends ControllerTemplate{
+
     public function index(Request $request){
-        $var = [];
+        $var = [
+            "meta_property" => [
+                "title" => __("Index"),
+                "site_name" => "Tolsedum",
+                "url" => url("/"),
+                "description" => __("A description of the project currently being worked on, with a description of the tasks completed."),
+                "image" => url("web/index/250/side_view_gardener_holding_little_tree.webp")
+            ]
+        ];
+        // dd(__("Index"));
         $article = Article::where("article_name", "index")->first();
         if(!empty($article)){
-            $var = $article->getArticleContent();
+            $var = array_merge($var, $article->getArticleContent());
         }
         $var["style_list"] = [
             url("resources/css/index.css")
@@ -36,10 +46,18 @@ class InfoController extends ControllerTemplate{
     }
 
     public function about(Request $request){
-        $var = [];
+        $var = [
+            "meta_property" => [
+                "title" => __("Resume"),
+                "site_name" => "Tolsedum",
+                "url" => url("/about"),
+                "description" => __("My name is Alexey and I am glad to welcome you on my resource. On this page you will find a description of my experience and plans for self-development."),
+                "image" => url("web/about/250/fon.webp")
+            ]
+        ];
         $article = Article::where("article_name", "about")->first();
         if(!empty($article)){
-            $var = $article->getArticleContent();
+            $var = array_merge($var, $article->getArticleContent());
         }
         $var["style_list"] = [
             url("resources/css/about.css")
@@ -48,10 +66,18 @@ class InfoController extends ControllerTemplate{
     }
 
     public function material_support(Request $request){
-        $var = [];
+        $var = [
+            "meta_property" => [
+                "title" => __("Assistance"),
+                "site_name" => "Tolsedum",
+                "url" => url("/material_support"),
+                "description" => __("You can support me in various forms - share my content on social networks, leave comments and reviews, tell your friends and colleagues about my site. In addition, if you want to support me financially, you can make a donation to my project. These funds will allow me to improve the content, develop new different projects and keep the site running. Together we can achieve great results!"),
+                "image" => url("web/about/250/fon.webp")
+            ]
+        ];
         $article = Article::where("article_name", "material_support")->first();
         if(!empty($article)){
-            $var = $article->getArticleContent();
+            $var = array_merge($var, $article->getArticleContent());
         }
         $var["style_list"] = [
             url("resources/css/material_support.css")
