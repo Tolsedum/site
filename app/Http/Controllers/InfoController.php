@@ -14,7 +14,7 @@ class InfoController extends ControllerTemplate{
     public function index(Request $request){
         $var = [
             "meta_property" => [
-                "title" => __("Home"),
+                "title" => __("Project currently being worked on"),
                 "site_name" => "Tolsedum",
                 "url" => url("/"),
                 "description" => __("A description of the project currently being worked on, with a description of the tasks completed."),
@@ -37,7 +37,7 @@ class InfoController extends ControllerTemplate{
             5 => ["active" => true],
             6 => ["active" => true],
             7 => ["active" => true],
-            8 => ["active" => false],
+            8 => ["active" => true],
             9 => ["active" => false],
             10 => ["active" => false],
             11 => ["active" => false],

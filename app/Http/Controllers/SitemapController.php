@@ -15,9 +15,11 @@ class SitemapController extends Controller{
     public function getMap($menu){
         $map = [];
         foreach ($menu as $url => $params) {
-            $map[url($url)] = [
-                "date_edit" => $params["date_edit"],
-            ];
+            foreach (["date_edit", "changefreq", "priority"] as $_var) {
+                if(isset($params[$_var])){
+                    $map[url($url)][$_var] = $params[$_var];
+                }
+            }
             if(isset($params["dropdown"])){
                 $map[url($url)]["dropdown"] = $this->getMap($params["dropdown"]);
             }

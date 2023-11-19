@@ -13,7 +13,7 @@
 
         <link rel="alternate" hreflang="en" href="{{ url('?lang=en') }}" />
         <link rel="alternate" hreflang="ru" href="{{ url('?lang=ru') }}" />
-        <link rel="icon" href="web/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
 
         <!-- Custom styles for this template -->
         @if(!empty($style_list))

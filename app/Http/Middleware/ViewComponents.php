@@ -58,20 +58,30 @@ class ViewComponents
         if($request->isMethod('get')){
             static::$elements = [
                 "ul" => [
+                    /**
+                     * changefreq => always, hourly, daily, weekly, monthly, yearly, never
+                     * priority => 0.0 - 1.0
+                     */
                     "/" => [
                         "active" => false,
                         "inner" => __("Home"),
-                        "date_edit" => "2023-11-15",
+                        "date_edit" => "2023-11-19",
+                        "changefreq" => "weekly", 
+                        "priority" => "1",
                     ],
                     "/about" => [
                         "active" => false,
                         "inner" => __("Resume"),
                         "date_edit" => "2023-11-15",
+                        "changefreq" => "weekly", 
+                        "priority" => "0.1",
                     ],
                     "/material_support" => [
                         "active" => false,
                         "inner" => __("Assistance"),
                         "date_edit" => "2023-11-15",
+                        "changefreq" => "weekly", 
+                        "priority" => "0.1",
                     ],
                     // "/my_project" => [
                     //     "active" => false,
